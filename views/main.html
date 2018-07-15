@@ -1,0 +1,139 @@
+<style type="text/css">
+</style>
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-lg-12 col-md-12">
+			<div class="panel">
+				<div class="panel-heading headingText">
+					<h5 class="panel-title"><b style="padding-left: 0.3em;">About the problem</b></h5>
+				</div>
+				<div class="panel-body">
+					<p class="problemDefinition">
+						Our problem is set in the planet of Lengaburu...in the distant galaxy of Tara B. After the recent war with neighbouring planet Falicornia, King Shan has exiled the Queen of Falicornia for 15 years.
+					</p>
+					<p class="problemDefinition">
+						Queen Al Falcone is now in hiding. But if King Shan can find her before the years are up, she will be exiled for another 15 years....
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-lg-12 col-md-12">
+			<div class="panel">
+				<div class="panel-heading headingText">
+					<h5 class="panel-title"><b style="padding-left: 0.3em;">How do we help King Shan ??</b></h5>
+				</div>
+				<div class="panel-body">
+					<p class="problemDefinition">
+						King Shan has received intelligence that Al Falcone is in hiding in one of these 6 planets - DonLon, Enchai, Jebing, Sapir, Lerbin & Pingasor. However he has limited resources at his disposal & can send his army to only 4 of these planets.
+					</p>
+					<p class="problemDefinition">
+						Now let us help <b>King Shan</b> in deploying his army to find queen <b>AI Falcone.</b>
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-lg-12 col-md-12">
+			<div class="panel">
+				<div class="panel-heading headingText">
+					<h5 class="panel-title"><b style="padding-left: 0.3em;">How UI works</b></h5>
+				</div>
+				<div class="panel-body">
+					<p class="problemDefinition">
+						Out of 6 planets, you need to select any 4 planets.
+					</p>
+					<p class="problemDefinition">
+						Select which vehicle to be sent to selected planet.
+					</p>
+					<p class="problemDefinition">
+						Every vehicle has its speed and distance range. At each vehicle selection time will be calculated and disaplyed.
+					</p>
+					<p class="problemDefinition">
+						You can change planet or vehicle n times before submit.
+					</p>
+					<p class="problemDefinition">
+						Once all the 4 planets and vehicles are selected, submit button will be enabled. Once you click submit, the result will be displayed in next view.
+					</p>
+					<center>
+						<button ng-click="displayArmy('showArmy')" class="btn customButton btn-responsive">
+						Vehicles & Planets
+					</button>
+					</center>
+				</div>
+			</div>
+		</div>
+	</div><br>
+
+	<div class="row" ng-if="showArmy">
+		<div class="col-lg-12 col-md-12">
+			<div class="panel">
+				<div class="row">
+					<div class="col-md-6">
+						<div class="panel"><br>
+							<div class="panel-heading headingText1">
+								<center>
+									<h5 class="panel-title"><b style="padding-left: 0.3em;">King Shan Army Vehicles</b></h5>
+								</center>
+							</div><br>
+							<div class="panel-body">
+								<center><img src="images/vehicles.png" class="image-responsive" width="100%"/>
+								</center><br>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="panel"><br>
+							<div class="panel-heading headingText2">
+								<center>
+									<h5 class="panel-title"><b style="padding-left: 0.3em;">Planets to be searched</b></h5>
+								</center>
+							</div><br>
+							<div class="panel-body">
+								<center>
+									<img src="images/planets.png" class="image-responsive" width="100%"/>
+								</center><br>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div><br>
+
+	<div class="row">
+		<div class="col-md-3">
+			
+		</div>
+		<div class="col-md-6">
+			<div class="panel">
+				<div class="panel-heading headingText">
+					<center>
+						<h5 class="panel-title"><b style="padding-left: 0.3em;">Time to help King Shan</b></h5>
+					</center>
+				</div>
+				<div class="panel-body">
+					<p class="problemDefinition">
+						So now you know what it is all about and how it is. Let us get started in helping King Shan.
+					</p>
+					<p class="problemDefinition">
+						Click on Let's Start button.
+					</p>
+					<center>
+						<li class="btn customButton">
+							<a ng-href="#/findFalcone">Let's Start Game</a>
+						</li>
+					</center>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-3">
+			
+		</div>
+	</div>
+
+</div>

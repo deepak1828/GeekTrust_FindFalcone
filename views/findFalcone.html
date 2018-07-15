@@ -1,0 +1,49 @@
+<div class="container bodyStarts" ng-controller="MainController as mainCtrl">
+  <center>
+    <img src="images/logo.jpg" style="border-radius: 25px;">
+    <h4>Select planets you want to search..</h4>
+  </center>
+  <form name="findFlaconeForm">
+    <div class="row">
+      <div class="form-group col-md-3" ng-repeat="value in range()">
+        <div class="planetSelection">
+          <p class="destinationHeading">Destination {{value}}</p>
+          <select class="form-control planetDropdown" ng-model="planetsSelect[value]" ng-options="item.name disable when (item.name|disablePlanetTest:selectedPlanets:value) for item in planetsInfo" ng-change="changePlanet($index,value,planetsSelect[value])" required>
+            <option value="">Select planet</option>
+          </select>
+        </div>
+            
+        <div class="col-md-12" ng-if="planetsSelect != undefined || planetsSelect != null">
+          <div ng-repeat="vehicleIndex in range()">
+            <div class="panel " ng-show="planetsSelect[vehicleIndex] != null">
+              <div ng-repeat="items in vehiclesInfo track by $index">
+                <label>
+                  <input type="radio" id="" ng-model="vehiclesList[vehicleIndex]" ng-value="items" ng-change="changeVehicle(vehiclesList[vehicleIndex], $index,vehicleIndex)" ng-disabled="items.total_no === 0 || items.max_distance < planetsSelect[value].distance"/>{{items.name}} ({{items.total_no}})
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <center>
+        <h4 style="margin-top: 1%;">Time taken: {{timeTaken}}</h4>
+      </center>
+    </div>
+    <div style="margin-top: 2%;">
+      <center>
+        <button type="submit" class="btn btn-primary" ng-click="submitToFind(vehiclesList)" ng-disabled="findFalconeFlag < vehiclesInfo.length">Find Falcone</button>
+      </center>
+    </div>
+  </form><br>
+  
+  <div class="row">
+    <div class="col-md-12">
+      <center>
+        <button class="btn btn-danger" ng-click="resetAll()">Reset</button>
+      </center>
+    </div>
+  </div>
+
+</div>

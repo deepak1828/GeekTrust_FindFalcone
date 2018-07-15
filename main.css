@@ -1,0 +1,75 @@
+body{
+	background: #dff3fb;
+	height: 100%;
+	font-family: 'Courgette', cursive;
+}
+.bodyStarts{
+	margin-top: 2%;
+}
+.planetSelection{
+	display: block;
+	height: auto;
+	background-color:  #03cdcd;
+	border-radius: 10px;
+	padding-bottom: 1%;
+}
+.planetSelection .destinationHeading{
+	color: #fff;
+	font-size: 1.5em;
+	font-weight: bold;
+	text-align: center;
+}
+.planetSelection .planetDropdown{
+	border-radius: 20px;
+	margin: 10%;
+	width: 80%;
+	background-color:  #03cdcd;
+	color: #feeb5c;
+	border: solid 1px #fff;
+	text-align: center;
+}
+
+/* Main page CSS */
+
+.panel{
+	background: #fff;
+  	border-radius: 10px;
+}
+.headingText {
+	background:  #900C3F;
+	color:  #f4f4fc;
+    padding: 0.20em;
+}
+.headingText1{
+	background:  #900C3F ;
+    color:  #f4f4fc ;
+    padding: 0.20em;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.headingText2{
+	background:  #900C3F ;
+    color:  #f4f4fc ;
+    padding: 0.20em;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.problemDefinition{
+	padding:0 0.5em 0.25em 0.5em;
+}
+.customButton{
+	background:  orange;
+    color:  #f4f4fc ;
+    font-weight: bold;
+    padding: 5px;
+    margin-bottom: 15px;
+}
+.customButton a{
+	color:  #f4f4fc;
+	text-decoration: none;
+}
+/* Main page CSS ends */
+
+.startAgain a{
+	text-decoration: none;
+}

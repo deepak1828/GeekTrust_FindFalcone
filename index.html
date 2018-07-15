@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="findFalcone">
+	<head>
+		<title>Find Falcone Frontend Challenge</title>
+		<meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
+    	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+      <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
+
+    	<!-- Custom CSS -->
+		<link href="main.css" rel="stylesheet" type="text/css">
+
+	</head>
+	<body>
+
+		<!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger">
+          <img src="images/logo.jpg" width="40px" style="border-radius: 25px;">
+        Find Falcone</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">Menu
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#">Home</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid" ng-view>
+      
+    </div>
+
+    <footer style="padding:5px; background-color:#795548; color: #FFFF8D; border-top:5px solid #BCAAA4;margin-top: 30px; font-family: 'Courgette', cursive;">
+      <h4 class="text-center">&copy;Find Falcone Coding Challenge </h4> 
+    </footer>
+
+		<!-- jQuery library -->
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+		<!-- Latest bootstrap -->
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+		<!--Angular JS Files -->
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular-route.min.js"></script>
+		<script src = "https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular-animate.min.js"></script>
+
+		<!--Custom Angular Files-->
+		<script type="text/javascript" src="angular/app.js"></script>
+    <script type="text/javascript" src="angular/routes.js"></script>
+    <script type="text/javascript" src="angular/services.js"></script>
+
+		<!-- CONTROLLERS -->  
+    <script type="text/javascript" src="angular/controllers/MainController.js"></script>
+
+    <!-- ROUTE FILE -->
+		<script type="text/javascript" src="angular/routes.js"></script>
+
+	</body>
+</html>

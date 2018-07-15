@@ -1,0 +1,24 @@
+<div class="container-fluid">
+	<div class="bodyStarts">
+		<div class="success" ng-show="queenFound.status === 'success'" style="margin-top: 2%;">
+	        <center>
+	        	<h4>Congratulations...!</h4>
+	        	<img src="images/{{queenFound.planet_name}}.png" class="image-responsive" style="border-radius: 15px;"/><br>
+	          	<h4>Queen AI Falcone found in planet 
+	            <b>{{queenFound.planet_name}}</b> 
+	          	and total time taken is <b>{{finalTimeTaken}}</b>
+	          	</h4><br>
+	          	<h3 class="startAgain"><a ng-href="#/findFalcone">Start Again..</a></h3>
+	        </center>
+      	</div>
+
+      	<div class="success" ng-show="queenFound.status === 'false'" style="margin-top: 2%;">
+        	<center>
+          		<h4>Sorry....</h4>
+          		<img src="images/failure.png" class="image-responsive" style="border-radius: 15px;">
+          		<h4>Your team was not able to find Queen. Try again, GOOD LUCK</h4>
+          		<h3 class="startAgain"><a ng-href="#/findFalcone">Try Again..</a></h3>
+        	</center>
+      	</div>
+	</div>
+</div>
